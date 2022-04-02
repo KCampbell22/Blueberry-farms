@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --blueberry-blue: #678BAF;
+    --gray: #e5e5e5;
+    --text-dark-blue: #576075;
+    --card-gray: #c4c4c45e;
+}
+*{
+    box-sizing: border-box;
+}
+#logo{
+    font-family: 'Caveat', cursive;
+    font-size: 41px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 4px 4px black;
+}
+html, body{
+    font-size: 100%;
+    background-color: var(--gray);
+    
+}
+.flex-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner-image{
+    width: 33%;
+    height: 300px;
+    margin: 15px;
+    background-color: blue;
+}
+.container{
+    background-color: var(--gray);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "status-cards activities"
+                            "flex-grid card-2";
+    
+}
+#top-left-gridbox::before{
+    content:  url(/Blueberry-Farm-files/vector-blueberry-black-white-engraved-ink-art-berries-leaves-isolated-illustration-element-leaf-plant-botanical-garden-floral-141383913-removebg-preview.png);
+    
+    position: absolute;
+    transform: translateY(534px) translateX(58px) rotate(-83deg);    
+    background-size: cover;
+    left: 0;
+    opacity: .4;
+}
+.container-2{
+    width: 100%;
+    height: 487px;
+    display: grid;
+    background-color: var(--gray);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, .5fr);
+    grid-template-areas: "cheesecake kitten"
+    "cheesecake benches";
+    margin-top: 20px;
+    padding-left: 5rem;
+    gap: 20px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    background-color: var(--blueberry-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5 10px;
+    width: 40%;
+    list-style: none;
+    
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+}
+.nav-bar li::before{
+    content: "\2022";
+    color: white;
+    margin-right: 4px;
+    
+}
+.nav-mobile{
+    display: none;
+}
+#status{
+    
+    color: var(--text-dark-blue);
+    font-family: 'Raleway', sans-serif;
+    color: var(--text-dark-blue);
+}
+#status-announcement{
+    width: 60ch;
+    text-align: justify;
+    letter-spacing: 1.5px;
+    font-family: 'Raleway', sans-serif;
+}
+.divider{
+    height: 4px;
+    width: 80%;
+    border: 3px solid var(--card-gray);
+    align-self: center;
+}
+.list-items{
+    
+}
+#blue-berry-violin{
+    width: 50%;
+    height: 350px;
+    border-radius: 9px;
+    align-self: flex-start;
+    background-image: url(/Blueberry-Farm-files/blueberry-violin.jpg);
+    background-size: 100% 100%;
+}
+.card{
+    width: 90%;
+    height: 300px;
+    margin: 10px auto;
+    background-color: var(--card-gray);
+    padding: 3rem;
+    font-family: 'Raleway', sans-serif;
+    color: var(--text-dark-blue);
+}
+.card-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.card-content{
+    
+    text-align: justify;
+}
+
+#top-left-gridbox{
+    grid-area: status-cards;
+}
+
+#activities{
+    grid-area: activities;
+    padding-left: 4rem;
+   
+}
+
+
+
+.list-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.list-wrapper::before{
+    content: url(/Blueberry-Farm-files/Lavender-Clipart-Black-and-White-3-removebg-preview.png);
+    opacity: .5;
+    position: absolute;
+    right: -123px;
+    top: 220px;
+    transform: rotate(-18.62deg);
+    overflow: hidden;
+}
+
+#grid-flex{
+    grid-area: flex-grid;
+}
+
+#double-cards{
+    grid-area: card-2;
+    justify-content: flex-start;
+}
+#double-cards::before{
+    content: url(/Blueberry-Farm-files/blackberry.png);
+    width: 251px;
+    height: 248px;
+    position: absolute;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    opacity: .5;
+    transform: translateY(240%) translateX(105px) rotate(157deg);}
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0%;
+    bottom: 0%;
+    height: 60px;
+    background-color: var(--blueberry-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#bluebrry-close-up{
+    background-image: url(/Blueberry-Farm-files/blue-berrys.jpg);
+    width: 33%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+#barn{
+    background-image: url(/Blueberry-Farm-files/barn.jpg);
+
+}
+#barn-sign{
+    background-image: url(/Blueberry-Farm-files/barn-sign.jpg);
+}
+#cheesecake{
+    background-image: url(/Blueberry-Farm-files/cheesecake.jpg);
+    grid-area: cheesecake;
+    border-radius: 9px;
+    background-size: cover;
+    background-position: center;
+    width: 350px;
+    height: 467px;
+}
+#kitten{
+    height: 213px;
+    width: 181px;
+    background-image: url(/Blueberry-Farm-files/Kitten.jpg);
+    border-radius: 9px;
+    grid-area: kitten;
+    background-size: cover;
+    background-position: center;
+}
+#benches{
+    background-image: url(/Blueberry-Farm-files/benches.jpg);
+    background-position: center;
+    grid-area: benches;
+    border-radius: 9px;
+    background-size: cover;
+    width: 181px;
+    height: 213px;
+    
+}
+
+#disclosure{
+    color: var(--text-dark-blue);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.list-wrapper{
+    color: var(--text-dark-blue);
+    font-family: 'Raleway';
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.list-wrapper ul{
+    list-style: none;
+}
+
+.activity-items{
+    padding: 10px;
+}
+#chicken{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    transform: translateY(10px);
+    z-index: 10;
+}
+#tracks{
+    position: absolute;
+    width: 168.71px;
+    height: 46.26px;
+    transform: translateY(76px) translateX(25px);
+    z-index: 10;
+}
+
+.directions-wrapper{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+iframe{
+    display: block;
+    width: 500px;
+    height: 500px;
+}

@@ -84,6 +84,9 @@ nav{
     align-items: center;
     justify-content: space-around;
 }
+.dropdown-links{
+    display: none;
+}
 .nav-bar{
     display: flex;
     align-items: center;
@@ -92,6 +95,30 @@ nav{
     width: 40%;
     list-style: none;
     
+}
+.hamburger{
+    width: 1.5rem;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bar-mobile{
+    width: 50%;
+    background-color: var(--blueberry-blue);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    transform: translateY(23px);
+    list-style: none;
+    z-index: 10;
+}
+
+.list-items-m {
+    margin: 5px;
+    padding: 10px;
+    border-bottom: 1px solid var(--card-gray);
 }
 .nav-link{
     text-decoration: none;
@@ -304,8 +331,9 @@ footer{
 }
 iframe{
     display: block;
-    width: 500px;
-    height: 500px;
+    width: 90%;
+    height: 90%;
+    z-index: 0;
 }
 @media screen and (max-width: 775px) {
     #top-left-gridbox::before, #double-cards::before, .list-wrapper::before, #chicken-wrapper, #chicken, #tracks{
@@ -313,9 +341,11 @@ iframe{
     }
     #desktop-nav{
         display: none;
+        z-index: 10;
     }
     .nav-mobile{
         display: flex;
+        z-index: 10;
     }
     #bluebrry-close-up, #barn-sign{
         display: none;
@@ -442,4 +472,13 @@ iframe{
     }
 
 
+}
+
+.show-nav{
+    display: block;
+    transition: 1.5s ease-in-out;
+    
+}
+.close-nav{
+    display: none;
 }

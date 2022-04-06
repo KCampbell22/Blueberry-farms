@@ -193,6 +193,7 @@ nav{
 #activities{
     grid-area: activities;
     padding-left: 4rem;
+    align-items: flex-start;
    
 }
 
@@ -398,6 +399,14 @@ iframe{
         justify-content: center;
         transform: translateX(12%);
     }
+    #activities{
+        padding: 0%;
+        align-items: center;
+    }
+    .list-wrapper{
+        padding: 0%;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width: 776px)  and (max-width: 992px){
@@ -445,6 +454,7 @@ iframe{
     }
     #activities{
         padding: 0;
+        align-items: center;
     }
     #blue-berry-violin{
         align-self: center;
